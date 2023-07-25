@@ -1,0 +1,51 @@
+//- Template Inheritance form base.pug
+//-  here we fill the blocks which is define in the base.pug
+
+
+extends base.pug
+
+block scripts  
+    script(src="/static/index.js") 
+
+block style 
+    style 
+        include ../static/style.css  
+block content
+      
+           
+            section#introsection 
+              div Welcome to Rishi's Dance Academy
+              div.small Eat Sleep Dance Repeat
+            section#missionsection  
+                    h2 our mission
+                    div.card
+                       h3 dance prefection 
+                       div.card-box 
+                           div.card-img 
+                               img(src="/static/dance1.png", alt="")
+                           div.card-content 
+                               p this is best dance academy
+
+                    div.card
+                       h3 dance the way you like
+                       div.card-box 
+                           div.card-img 
+                                img(src="/static/dance3.png", alt="")
+                           div.card-content 
+                                p this is best dance academy
+
+                    div.card
+                       h3  expert teching 
+                       div.card-box 
+                           div.card-img 
+                               img(src="/static/dance4.png", alt="")
+                           div.card-content 
+                               p this is best dance academy
+            section#sponsorsection
+              
+              h2 Our Sponsors 
+              div#sponsors
+                 img(src="/static/dell-png-logo-project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/hp.logo.project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/microsoft.logo.project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/skype.logo.project2.png", alt="Sponsors" class="spimage")       

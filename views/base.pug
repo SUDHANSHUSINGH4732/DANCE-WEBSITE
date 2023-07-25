@@ -1,0 +1,33 @@
+//- Template Inheritance
+
+
+doctype html 
+html
+  head
+        title sudhanshu dance academy
+      
+        block scripts
+     
+        block  style   
+
+  body
+
+      nav#navbar
+                ul 
+                    div#logo
+                        img(src="/static/dance-2.png", alt="img")
+                        |SDA
+                      
+                    li 
+                         a(href="/") home
+                    li 
+                         a(href="/") about 
+                    li 
+                         a(href="/") sevices
+                    li 
+                         a(href="/") class info
+                    li
+                         a(href="/contact")   contact us 
+      block content
+      footer#footer 
+        || Copyright © 2019 sudhanshuAcademy.com | All Rights Reserved

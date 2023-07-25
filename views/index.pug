@@ -1,0 +1,74 @@
+//-  we c an take refrence form pug documention
+//-  we use pug like python we use indention(space) for colseing tag
+doctype html
+html
+      head 
+         title sudhanshu dance academy
+         style 
+              include ../static/style.css
+      body 
+            nav#navbar
+                ul 
+                    div#logo
+                        img(src="/static/dance-2.png", alt="img")
+                        |SDA
+                      
+                    li 
+                         a(href="/") home
+                    li 
+                         a(href="/") about 
+                    li 
+                         a(href="/") sevices
+                    li 
+                         a(href="/") class info
+                    li
+                         a(href="/")   contact us 
+            section#introsection 
+              div Welcome to sudhanshu's Dance Academy
+              div.small Eat Sleep Dance Repeat
+            section#missionsection  
+                    h2 our mission
+                    div.card
+                       h3 dance prefection 
+                       div.card-box 
+                           div.card-img 
+                               img(src="/static/dance1.png", alt="")
+                           div.card-content 
+                               p this is best dance academy
+
+                    div.card
+                       h3 dance the way you like
+                       div.card-box 
+                           div.card-img 
+                                img(src="/static/dance3.png", alt="")
+                           div.card-content 
+                                p this is best dance academy
+
+                    div.card
+                       h3  expert teching 
+                       div.card-box 
+                           div.card-img 
+                               img(src="/static/dance4.png", alt="")
+                           div.card-content 
+                               p this is best dance academy
+            section#sponsorsection
+              
+              h2 Our Sponsors 
+              div#sponsors
+                 img(src="/static/dell-png-logo-project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/hp.logo.project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/microsoft.logo.project2.png", alt="Sponsors" class="spimage")
+                 img(src="/static/skype.logo.project2.png", alt="Sponsors" class="spimage")
+            
+
+            footer#footer 
+               || Copyright © 2019 HarryAcademy.com | All Rights Reserved
+                
+             
+                     
+                
+            script
+                 include ../static/index.js 
+
+
+
